@@ -49,7 +49,7 @@ Then if you don't just want to stare at a spinning box icon on all 3 platforms y
 
 1. Run `npm i -g yarn` to install yarn globally
 2. Install the `Debugger for Chrome` extension in VSCode.
-3. Run `yarn setup` to install dependencies and configure the environment
+3. Run `yarn` to install dependencies and configure the environment
 4. Run `yarn develop` to start
 5. _(Optional, but highly recommended)_ Click ![debug-icon](https://github.com/VirtualEstatePlanner/crate/blob/master/README-images/debug-icon.png) and then click this green triangle: ![debug-icon](https://github.com/VirtualEstatePlanner/crate/blob/master/README-images/debug-menu.png)
 6. _(Optional, but officially recommended by people who aren't me becuase I like to live dangerously and I am a rolling distro kind of guy)_ Replace all instances of `latest` with actual version numbers in all 3 `package.json` files, unless you like to live dangerously _(or are a rolling-distro kind of guy, gal, or android death machine)_
