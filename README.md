@@ -9,8 +9,7 @@
 3. [Develop](#how-to-run-in-development-mode 'How to develop in hot-reload mode')
 4. [Build Prerequisites](#prerequisites-to-build-some-distributable-installers 'What you need to target specific distribution chanels')
 5. [Build for an OS](#how-to-build-distributable-installers-for-specific-platforms 'The commands to build a target for a given OS')
-6. [Build for multiple OSes](#how-to-build-distributable-installers-for-multiple-platforms 'The commands to build a target for linux and windows')
-7. [Build for all OSes](#how-to-build-distributable-installers-for-all-platforms 'The commands to build a target for all 3 OSes')
+6. [Build for all OSes](#how-to-build-distributable-installers-for-all-platforms 'The commands to build a target for all 3 OSes')
 
 [](#about-crate)
 
@@ -72,22 +71,13 @@ If you are developing for deployment on the Mac App Store (because you don't wan
 
 ### How to build distributable installers for specific platforms
 
-Run `yarn dist-l` to make an executable for linux in the `binaries` directory _(works on any platform)_
+Run `yarn dist:linux`, `yarn dist:linux-intel64`, or `dist:linux-arm64` to make executables for linux in the `binaries` directory _(works on any platform)_
 
-Run `yarn dist-m` to make an executable for mac in the `binaries` directory _(only works on macOS)_
+Run `yarn dist:mac`, `yarn dist:mac-intel64`, or `yarn dist:mac-arm64`  to make executables for mac in the `binaries` directory _(only works on macOS)_
 
-Run `yarn dist-w` to make an executable for windows in the `binaries` directory _(only works on windows)_
+Run `yarn dist:win`, `yarn dist:win-intel64`, or `yarn dist:win-arm64` to make executables for windows in the `binaries` directory _(only works on windows)_
 
-Run `yarn dist-w-docker` to make an executable for windows in the `binaries` directory _(only works on macOS or linux)_
-
-[TOC](#table-of-contents 'Jump back to the Table of Contents')
-
-[](#how-to-build-distributable-installers-for-multiple-platforms)
-
-### How to build distributable installers for multiple platforms
-
-1. Make sure the docker daemon is running on macOS or linux
-2. Run `yarn dist-most` to make executables for the linux and windows platforms in the `binaries` directory
+Run `yarn dist:win-docker`, `yarn dist:win-docker-intel64`, or `yarn dist:win-docker-arm64`,  to make executable fors windows in the `binaries` directory _(works on macOS or linux)_
 
 [TOC](#table-of-contents 'Jump back to the Table of Contents')
 
@@ -100,7 +90,7 @@ Run `yarn dist-w-docker` to make an executable for windows in the `binaries` dir
 1. Own a macOS computer
 2. Be very lazy
 3. Make sure the docker daemon is running
-4. Run `yarn dist-all` to make executables for all platforms in the `binaries` directory
+4. Run `yarn dist:all` to make executables for all platforms and architectures in the `binaries` directory
 5. Your mac will tell you when it's done
 
 [TOC](#table-of-contents 'Jump back to the Table of Contents')
