@@ -39,53 +39,6 @@
     "dist:all": "run-s -l warning:mac-only clean build-transpile dist:linux dist:mac dist:win-docker",
     "postdist:all": "say 'All distributables output to binaries directory.'"
   },
-  "build": {
-    "appId": "com.YOUR_GITHUB_USER.YOUR_PRODUCT_NAME",
-    "asar": true,
-    "files": [
-      "node_modules/node-notifier/vendor/snoreToast/SnoreToast.exe"
-    ],
-    "dmg": {
-      "title": "YOUR_PRODUCT_NAME",
-      "contents": [
-        {
-          "x": 400,
-          "y": 150,
-          "type": "link",
-          "path": "/Applications"
-        },
-        {
-          "x": 150,
-          "y": 150,
-          "type": "file"
-        }
-      ]
-    },
-    "mac": {
-      "target": {
-        "target": "dmg",
-        "arch": [
-          "arm64",
-          "x64"
-        ]
-      },
-      "category": "public.app-category.developer-tools",
-      "icon": "./src/images/icons/icon.icns",
-      "identity": null
-    },
-    "win": {
-      "target": [
-        "portable"
-      ],
-      "icon": "./src/images/icons/icon.ico"
-    },
-    "linux": {
-      "target": [
-        "AppImage"
-      ],
-      "category": "Development"
-    }
-  },
   "name": "your-package-name",
   "productName": "YOUR_PRODUCT_NAME",
   "description": "YOUR_APPLICATION_DESCRIPTON",
