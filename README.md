@@ -87,10 +87,10 @@ Run `yarn dist:win-docker`, `yarn dist:win-docker-intel64`, or `yarn dist:win-do
 
 (_only works on macOS_)
 
-1. Own a macOS computer
+1. Own an intel macOS computer (or maybe a Hackintosh)
 2. Be very lazy
-3. Make sure the docker daemon is running
-4. Run `yarn dist:all` to make executables for all platforms and architectures in the `binaries` directory
+3. Make sure your docker daemon is running
+4. Run `yarn dist:all-working` to make executables for all platforms and architectures in the `binaries` directory
 5. Your mac will tell you when it's done
 
 [TOC](#table-of-contents 'Jump back to the Table of Contents')
