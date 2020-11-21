@@ -1,5 +1,5 @@
 appId: com.YOUR_GITHUB_USER.YOUR_PRODUCT_NAME
-artifactName: ${productName}-${version}.${ext}
+artifactName: ${productName}-${version}-linux-arm64.${ext}
 asar: true
 directories:
   output: ./dist
