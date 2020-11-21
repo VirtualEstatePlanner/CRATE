@@ -1,4 +1,4 @@
-appId: com.VirtualEstatePlanner.MEGADocker
+appId: com.YOUR_GITHUB_USER.YOUR_PRODUCT_NAME
 artifactName: ${productName}-${version}.${ext}
 asar: true
 directories:
@@ -8,7 +8,7 @@ files:
   - 'node_modules/node-notifier/vendor/snoreToast/SnoreToast.exe'
 compression: maximum
 dmg:
-  title: MEGADocker
+  title: YOUR_PRODUCT_NAME
   icon: './src/images/icons/icon.icns'
   iconSize: 128
   contents:
