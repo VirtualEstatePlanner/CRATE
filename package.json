@@ -43,12 +43,20 @@
   "productName": "YOUR_PRODUCT_NAME",
   "description": "YOUR_APPLICATION_DESCRIPTON",
   "keywords": [
-    "typescript",
-    "react",
-    "electron",
+    "typescript 4",
+    "react 17",
+    "material-ui 5",
+    "electron 11",
     "boilerplate",
-    "electron-builder",
-    "cross-platform"
+    "cross-platform",
+    "macOS arm",
+    "Apple Silicon",
+    "macOS amd64",
+    "Apple Intel",
+    "linux arm",
+    "linux amd64",
+    "Windows arm",
+    "Windows amd64"
   ],
   "version": "0.1.0",
   "buildVersion": "0.1.0",
@@ -58,6 +66,11 @@
   "copyright": "© 2020 YOUR_NAME",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^5.0.0-alpha.16",
+    "@material-ui/icons": "^5.0.0-alpha.15",
+    "@material-ui/styles": "^5.0.0-alpha.15",
+    "@emotion/react": "11.1.1",
+    "@emotion/styled": "11.0.0",
     "react": "latest",
     "react-dom": "latest",
     "react-scripts": "latest"
@@ -65,6 +78,8 @@
   "devDependencies": {
     "@types/electron-devtools-installer": "latest",
     "@types/jest": "latest",
+    "@types/material-ui": "^0.21.8",
+    "@types/prettier": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "cross-env": "latest",
@@ -73,7 +88,8 @@
     "electron-devtools-installer": "latest",
     "electron-is-dev": "latest",
     "npm-run-all": "latest",
-    "typescript": "latest",
+    "prettier": "latest",
+    "typescript": "4.0.5",
     "wait-on": "latest"
   },
   "eslintConfig": {
