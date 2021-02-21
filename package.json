@@ -65,7 +65,7 @@
   "main": "electron.js",
   "homepage": ".",
   "author": "YOUR_NAME <YOUR_EMAIL_ADDRESS> (https://github.com/YOUR_GITHUB_USER)",
-  "copyright": "© 2020 YOUR_NAME",
+  "copyright": "© 2021 YOUR_NAME",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^5.0.0-alpha.16",
