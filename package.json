@@ -68,11 +68,11 @@
   "copyright": "© 2021 YOUR_NAME",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^5.0.0-alpha.16",
-    "@material-ui/icons": "^5.0.0-alpha.15",
-    "@material-ui/styles": "^5.0.0-alpha.15",
-    "@emotion/react": "11.1.1",
-    "@emotion/styled": "11.0.0",
+    "@material-ui/core": "next",
+    "@material-ui/icons": "next",
+    "@material-ui/styles": "next",
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-scripts": "latest"

@@ -6,11 +6,11 @@
 /cache
 **/*.js
 !public/preload.js
-**/*/.DS_Store
+.DS_Store
 **/*/.env
 yarn-debug.log*
 yarn-error.log
 yarn.lock
 .eslintcache
 electron.ts
-.VSCodeCounter/2020-12-08_23-10-09
+.VSCodeCounter
