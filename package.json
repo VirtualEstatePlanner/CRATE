@@ -73,9 +73,13 @@
     "react-scripts": "latest"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
     "@types/electron-devtools-installer": "latest",
+    "@types/file-saver": "latest",
     "@types/jest": "latest",
     "@types/material-ui": "latest",
+    "@types/node": "latest",
     "@types/prettier": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
@@ -85,9 +89,41 @@
     "electron-devtools-installer": "latest",
     "electron-is-dev": "latest",
     "npm-run-all": "latest",
+    "open": "latest",
     "prettier": "latest",
+    "ts-jest": "latest",
+    "ts-node": "latest",
     "typescript": "latest",
-    "wait-on": "latest"
+    "wait-on": "latest",
+    "yaml-validator": "latest"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageThreshold": {
+      "global": {
+        "branches": 0,
+        "functions": 0,
+        "lines": 0,
+        "statements": 0
+      }
+    },
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ],
+    "moduleNameMapper": {
+      "\\.(css)$": "<rootDir>/src/typings/css.d.ts",
+      "\\.(png)$": "<rootDir>/src/typings/png.d.ts"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
