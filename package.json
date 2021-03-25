@@ -123,6 +123,7 @@
     ],
     "moduleNameMapper": {
       "\\.(css)$": "<rootDir>/src/typings/css.d.ts",
+      "\\.(jpg)$": "<rootDir>/src/typings/jpg.d.ts",
       "\\.(png)$": "<rootDir>/src/typings/png.d.ts"
     }
   },
