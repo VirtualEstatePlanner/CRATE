@@ -24,6 +24,7 @@
     "react-build": "IMAGE_INLINE_SIZE_LIMIT=0 react-scripts build",
     "build-transpile": "run-s unbuild tsc-build react-build",
     "warning:mac-only": "echo && echo 'CRATE warning: This script will only function on macOS' && echo",
+    "dist:web": "cp src/scripts/tsnode/tsconfig.json . && yarn undist && npx ts-node src/scripts/utility/webzip.ts",
     "dist:linux-intel64": "yarn undist && cross-env NODE_ENV=production electron-builder -l -c ./electron-configs/linux-intel-64.yml && mv dist/*.AppImage binaries/linux/intel/",
     "dist:linux-arm64": "yarn undist && cross-env NODE_ENV=production electron-builder -l -c ./electron-configs/linux-arm-64.yml && mv dist/*.AppImage binaries/linux/arm/",
     "dist:linux": "run-s dist:linux-intel64 dist:linux-arm64",
